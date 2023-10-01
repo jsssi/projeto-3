@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>formulario</title>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>Crie e compartilhe
+        seu evento.</h1>
+      <p>O primeiro passo, é preencher esse
+        formulário de inscrição.</p>
+    </header>
+    <form id="event-form">
+      <fieldset>
+        <div class="fildset-wraper">
+
+          <legend>Informaçoes do evento</legend>
+
+          <div class="imput-wraper">
+            <label for="event-tittle">Titulo de evento <span>(mínimo 8 caracteres)</span></label>
+            <input 
+            type="text" 
+            id="event-tittle"
+            required
+            minlength="8">
+          </div>
+
+          <div class="imput-wraper">
+            <label for="event-link">Link do evento<span>(comece com https://)</span></label>
+            <input type="url" id="event-link">
+          </div>
+
+          <div class="imput-wraper">
+            <label for="event-contact">Whatsapp para contato<span>(somente números)</span></label>
+            <input type="text" id="event-contact">
+          </div>
+
+          <div class="imput-wraper">
+            <label for="event-info">Informações extras</label>
+            <textarea id="event-info"></textarea>
+          </div>
+          <div class="imput-wraper">
+            <label for="imput-options">Categoria</label>
+            <select id="imput-options">
+              <option value="eventos">Ao vivo</option>
+              <option value="festas ">Animadas</option>
+              <option value="espaços">Grande</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="fildset-wraper">
+          <legend>Privacidade</legend>
+
+          <div class="imput-wraper">
+            <label for="email-adm">E-mail do administrador<span>(digite um email válido)</span></label>
+            <input type="email" id="email-adm">
+          </div>
+
+          <div class="imput-wraper">
+            <label for="password">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
+            <input type="password" id="password">
+          </div>
+
+          <div class="checkbox-wraper">
+            <input type="checkbox" id="Privaci-event">
+            <label for="Privaci-event">Evento Privado</label>
+          </div>
+
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="fildset-wraper">
+          <legend>Dia e hora</legend>
+
+          <div class="col-3">
+            <div class="imput-wraper">
+              <label for="event-date">date</label>
+              <input type="date" id="date">
+            </div>
+
+            <div class="imput-wraper">
+              <label for="event-begin">Das</label>
+              <input type="time" id="event-begin">
+            </div>
+
+            <div class="imput-wraper">
+              <label for="event-end">Até</label>
+              <input type="time" id="event-end">
+            </div>
+          </div>
+
+
+        </div>
+      </fieldset>
+    </form>
+
+    <footer>
+      <input  
+      id="event-save"   
+      type="submit"
+      form="event-form" 
+      value="Salvar evento">
+    </footer>
+
+  </div>
+
+</body>
+
+</html>

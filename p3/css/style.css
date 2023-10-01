@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap');
+*{
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  background: #e5e5e5e5;
+
+}
+body::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  height: 40vh;
+  
+  background:#121214;
+  
+  z-index: -1;
+}
+.page{
+  
+  width: 736px;
+  margin: auto;
+}
+header{
+  width: 319px;
+}
+header h1{
+color:#FFF;
+font-family: 'Archivo';
+font-size: 36px;
+font-weight: 700;
+line-height: 42px; 
+}
+header p{
+color: #42D3FF;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px; 
+}
+form{
+  font-family: 'popins','sans-serif';
+  border: 1px solid white;
+  background: white;
+  min-height: 100%;
+
+  border-radius: 8px;
+  padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  margin-top: 38px;
+}
+fieldset{
+  border: none;
+}
+.fildset-wraper{
+  display: flex;
+  flex-direction: column;
+  
+
+  gap: 24px;
+}
+fieldset legend{
+  color: var(--texts-ttulos, #32264D);
+  font-family: 'Archivo';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px; 
+ 
+  width: 100%;
+  border-bottom: 1px solid red;
+}
+.imput-wraper{
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+.imput-wraper input , textarea , select{
+  color: #474747;
+
+  font-size: 16px;
+  padding: 0 24px; 
+  font-weight: 400;
+  line-height: 26px; 
+  appearance: none;
+
+
+
+  border: 1px solid #474747;
+}
+.imput-wraper select:hover{
+  color: #121214;
+}
+.imput-wraper label{
+  
+  color: #4E4958;
+  font-size: 14px;
+  line-height: 24px; 
+
+  margin-bottom: 8px;
+}
+.imput-wraper span{
+  color:#C1BCCC;
+  margin-left: 12px;
+}
+.imput-wraper span:hover{
+  color: #474747;
+}
+.imput-wraper input , .imput-wraper textarea{
+  border-radius: 8px;
+  border: 1px solid black;
+  height: 56px;
+  line-height: 24px;
+
+  
+}
+.imput-wraper textarea{
+  height: 168px;
+}
+.imput-wraper select{
+  height: 56px;
+} 
+.col-3{
+  display: flex;
+
+  gap: 20px;
+}
+.col-3 > div:nth-child(1){
+  width: 100%;
+}
+.checkbox-wraper{
+  position: relative;
+}
+.checkbox-wraper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+ }
+.checkbox-wraper label{
+  color: #4E4958;
+  font-family: 'Archivo';
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+
+
+  
+  display: flex;
+  align-items: center;
+ 
+  gap: 16px;
+
+}.checkbox-wraper label::before{
+  content: '';
+  width: 24px;
+  height: 24px;
+  border: 1px solid gray;
+  border-radius: 8px;
+
+  display: block;
+}
+.checkbox-wraper input:checked+label::before{
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_2355_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7.00003L19.59 5.59003L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2355_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+
+
+.checkbox-wraper input:focus +label::before{
+  outline: 2px solid black;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 64px;
+  width: 736px;
+  height: 136px;
+  
+}
+#event-save{
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 608px;
+  height: 56px;
+
+  background: #04D361;
+  color: #FFF;
+ 
+ font-size: 16px;
+ font-family: 'Archivo';
+ font-weight: 600;
+ line-height: 26px; 
+
+ padding: 15px 40px 15px 40px;
+
+ border-radius: 8px;
+
+
+ cursor: pointer;
+}
+input:invalid{
+  border: 1px solid red;
+}
